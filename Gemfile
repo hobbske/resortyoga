@@ -13,7 +13,7 @@ group :production do
   gem 'rails_12factor'
 end
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.4'
 # Use jQuery to compliment Bootstrap
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 # Use Bootstrap for general stylings
