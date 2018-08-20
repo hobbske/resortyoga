@@ -1,0 +1,31 @@
+<div class="background-contacts">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="">
+
+        <h2>Send Me A Message</h2>
+        <h4>How can I help?</h4>
+        <br>
+
+        <%= form_for @contact do |f| %>
+
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: "form-control"%>
+          </div>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.text_field :email, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :comments %>
+            <%= f.text_area :comments, class: "form-control" %>
+          </div>
+
+          <%= f.submit "Submit", class: "btn btn-brand-btn" %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

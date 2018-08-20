@@ -36,6 +36,7 @@
             <li class="links"><%= link_to "Home", root_path %></li>
             <li class="links"><%= link_to "About", about_path %></li>
             <li class="links"><%= link_to "Blog", posts_path %></li>
+            <li class="links"><%= link_to "Contact", new_contact_path %></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -50,7 +51,7 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div>
+    <div class="row">
       <%= yield %>
     </div>
     
