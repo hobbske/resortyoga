@@ -53,6 +53,11 @@ height: 100vh;
   margin-right: 10%;
   margin-left: 10%;
 }
+.navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > a:hover, .navbar-default .navbar-nav > li.open > a:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -66,7 +71,7 @@ height: 100vh;
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: rgba(187, 220, 232, 0.6);
+  background-color: rgba(187, 220, 232, 0.8);
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
