@@ -1,32 +1,36 @@
-<p id="notice"><%= notice %></p>
-<div class="text-center">
-  <h1>Isabella's Blog</h1>
-</div>
-  
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Created</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="background-posts"> 
+  <p id="notice"><%= notice %></p>
+  <div class="page-header text-center">
+    Resort Yoga Blog
+  </div>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %> </td>
-        <td><%= link_to 'Show', post, class: "btn btn-success" %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div class="table-container"> 
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Body</th>
+          <th>Created</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<br>
+      <tbody>
+        <% @posts.each do |post| %>
+          <tr>
+            <td><%= post.title %></td>
+            <td><%= post.body %></td>
+            <td><%= post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %> </td>
+            <td><%= link_to 'Show', post, class: "btn btn-brand-btn" %></td>
+            <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-brand-btn" %></td>
+            <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-brand-btn" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-<%= link_to 'New Post', new_post_path, class: 'btn btn-primary' %>
+    <br>
+
+    <%= link_to 'New Post', new_post_path, class: 'btn btn-brand' %>
+  </div>
+</div> 
