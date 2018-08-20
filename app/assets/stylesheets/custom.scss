@@ -50,8 +50,8 @@ height: 100vh;
   border-color: rgba(22, 124, 208, 1);
 }
 .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 .dropdown-menu {
   position: absolute;
@@ -101,7 +101,7 @@ img.nav-logo {
 .navbar-default .navbar-nav > li > a {
     /*color: rgba(255,255,255,1);*/
     color: rgba(151, 188, 224, 1);
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     margin-top: 20px;
 }
 .table-hover > tbody > tr:hover {
