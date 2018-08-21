@@ -2,7 +2,9 @@
 /*DEFAULT STYLES*/
 /********************************************************/
 
-/*BRAND COLOR --> rgba(187, 220, 232, 1) light blue*/
+/*BRAND COLORS --> rgba(187, 220, 232, 1) light blue*/
+                /*rgba(  0, 115, 255, 1)  dark blue*/
+                /*rgba(120, 120, 120, 1)  dark gray*/
 
 html, body {
 	font-family: 'Quicksand', sans-serif;
@@ -17,7 +19,7 @@ html, body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	height: 100%;
 	padding-top: 1%;
 }
 .background-contacts {
@@ -57,9 +59,14 @@ html, body {
   border-color: rgba(22, 124, 208, 1);
 }
 .btn-brand-btn {
-  color: black;
-  background-color: rgba(187, 220, 232, 0.6);
-  border-color: rgba(22, 124, 208, 1);
+  color: rgba(0, 115, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 115, 255, 1);
+}
+.btn-brand-btn:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 115, 255, .5);
+  border-color: rgba(255, 255, 255, 1);
 }
 .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
   margin-right: 10%;
@@ -76,9 +83,9 @@ html, body {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 2.0vh;
   text-align: left;
-  background-color: rgba(187, 220, 232, 1);
+  background-color: rgba(255, 255, 255, 1);
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -91,6 +98,16 @@ html, body {
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     color: black;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: rgba(255,255,255,.2);
+  color: rgba(0, 115, 255, 1);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: rgba(0, 115, 255, 1);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  background-color: rgba(187, 220, 232, 0.4);
 }
 .form-label {
 	letter-spacing: 1.5px;
@@ -117,7 +134,7 @@ img.nav-logo {
 .navbar-brand {
   margin: 0% ;
   padding: 0%;
-  font-size: 18px;
+  font-size: 2.0vh;
   line-height: 20px; 
   height: 90px; 
 }
@@ -125,12 +142,12 @@ img.nav-logo {
   background-color: rgba(255,255,255,0);
   border-color: rgba(255,255,255,0);
   /*color: rgba(255,255,255,1);*/
-  color: rgba(151, 188, 224, 1);
+  color: rgba(0, 115, 255, 1);
 }
 .navbar-default .navbar-nav > li > a {
     /*color: rgba(255,255,255,1);*/
-    color: rgba(151, 188, 224, 1);
-    font-size: 2.2vh;
+    color: rgba(0, 115, 255, 1);
+    font-size: 2.0vh;
     margin-top: 20px;
     letter-spacing: 1.5px;
 }
@@ -145,12 +162,12 @@ img.nav-logo {
     border-radius: 4px;
 }
 .notice-success {
-	  color: rgba(0, 219, 51, 0.5);
+	  color: rgba(0, 219, 51, .9);
     background-color: rgba(255, 255, 255, 0.4);
     border-color: rgba(0, 219, 51, 0.5);
 }
 .notice-error {
-	  color: rgba(255, 10, 10, 0.5);
+	  color: rgba(255, 10, 10, 0.7);
     background-color: rgba(255, 255, 255, 0.4);
     border-color: rgba(255, 10, 10, 0.5);
 }
@@ -176,14 +193,30 @@ img.nav-logo {
 /* Large devices (laptops/desktops, 1100px and below) */
 /********************************************************/
 @media only screen and (max-width: 1100px) {
-
+.navbar-brand {
+  margin: 0% ;
+  padding: 0%;
+  font-size: 14px;
+  line-height: 20px; 
+  height: 80px; 
+}
+.navbar-default .navbar-nav > li > a {
+    /*color: rgba(255,255,255,1);*/
+    color: rgba(151, 188, 224, 1);
+    font-size: 2.0vh;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
 
 }
 /********************************************************/
 /* Medium devices (landscape tablets, 800px and below) */
 /********************************************************/
 @media only screen and (max-width: 800px) {
-
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+  margin-right: 2%;
+  margin-left: 2%;
+}
 
 }
 /********************************************************/

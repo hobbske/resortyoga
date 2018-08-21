@@ -3,17 +3,23 @@
 		Resort Yoga
 	</div> -->
 	<div class="welcome-logo text-center">
-		<%= image_tag('logo/ry-nametag-wh.png', class: 'logo-home') %>
+		<%= image_tag('logo/ry-nametag-db.png', class: 'logo-home') %>
 	</div>
-	<div class="quote-container">
-		<div class="welcome-quote text-left">
-			In seconds you can reverse stress with my yoga training and start living your life with better health and enjoyment!
-			<div class="text-right">~ Isabella Jones</div>
-		</div>
-		<div class="learn-more text-center">
-			<%= link_to 'Learn More', about_path, class: 'btn btn-lg btn-brand' %>
+	
+	<div id="quotebar">
+		<div id="quotebar-inner">
+			<div id="quote">
+				In seconds you can reverse stress with my yoga training and start living your life with better health and enjoyment!
+				<div class="text-right">~ Isabella Jones</div>
+			</div>
+			
+			<div id="isabella"></div>
 		</div>
 	</div>
 	
+	<div class="learn-more text-center">
+		<%= link_to 'Learn More', about_path, class: 'btn btn-lg btn-brand-btn' %>
+	</div>
 
 </div>
+

@@ -10,7 +10,7 @@
       <thead>
         <tr>
           <th>Title</th>
-          <th>Body</th>
+          <th id="body">Body</th>
           <th>Created</th>
           <th colspan="3"></th>
         </tr>
@@ -20,7 +20,7 @@
         <% @posts.each do |post| %>
           <tr>
             <td><%= post.title %></td>
-            <td><%= post.body %></td>
+            <td id="body"><%= post.body %></td>
             <td><%= post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %> </td>
             <td><%= link_to 'Show', post, class: "btn btn-brand-btn" %></td>
             <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-brand-btn" %></td>

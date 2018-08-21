@@ -1,14 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="background-posts">
+	<div class="row contact-form">
+	  <div class="col-md-8 col-md-offset-2">
 
-<div class="jumbotron text-center">
-  <h2><%= @post.title %></h2>
-	<h5><%= @post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %> </h5>
+			<p id="notice"><%= notice %></p>
+
+			<div class="post-header text-center">
+			  <h1><%= @post.title %></h1>
+				<h3><%= @post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %> </h3>
+			
+
+				<div class="row post-body">	    		
+						<%= @post.body %>
+				</div>
+			  
+
+				<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-default' %>
+				<%= link_to 'Back', posts_path, class: 'btn btn-primary' %>
+			</div>
+		</div>
+	</div>
 </div>
-
-<div class="well">
-	<%= @post.body %>
-</div>
-  
-
-<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-warning' %> |
-<%= link_to 'Back', posts_path %>

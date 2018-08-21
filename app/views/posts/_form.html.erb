@@ -23,6 +23,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit 'Submit Post', :class => 'btn btn-primary'%>
+    <%= form.submit 'Submit Post', :class => 'btn btn-default'%>
+    <%= link_to 'Back', posts_path, class: 'btn btn-primary' %>
   </div>
 <% end %>
