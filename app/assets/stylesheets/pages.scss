@@ -13,7 +13,7 @@
 	margin-top: 0%;
 }
 .logo-home {
-	height: 60vh;
+	height: 40vh;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: rgba(255,255,255,.2);
@@ -28,10 +28,14 @@
 .page-header {
 	background-color: rgba(255,255,255,.1);
 	border-radius: 10px;
-	font-size: 60px;
-	color: rgba(255, 255, 255, 1);
-	margin: auto 20%;
-	padding: 2%;
+	font-size: 5vh;
+	color: white;
+	margin: 0% 10% 0% 10%;
+	padding: 0% 0% 0% 0%;
+}
+.page-header-logo {
+	height: 10vh;
+	margin-top: 1%;
 }
 .quote-container {
 	background-color: rgba(255,255,255,0);
@@ -39,12 +43,11 @@
 	margin: 0% 15% 0% 15%;
 }
 .table-container {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 3% 1%;
 }
 .welcome-logo {
-	margin: auto 20%;
-	padding: 0%;
+	margin: auto 10%;
+	padding: 2%;
 }
 .welcome-quote {
 	font-size: 24px;
@@ -58,9 +61,6 @@
 /* Extra large devices (large laptops and desktops, 1300px and below) */
 /********************************************************/
 @media only screen and (max-width: 1300px) {
-.logo-home {
-	height: 50vh;
-}
 
 }
 /********************************************************/

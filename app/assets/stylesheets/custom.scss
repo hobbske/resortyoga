@@ -18,6 +18,7 @@ html, body {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	padding-top: 1%;
 }
 .background-contacts {
 	background: url('background/contact-bg.jpg');
@@ -25,14 +26,16 @@ html, body {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	padding-top: 1%;
 	color: white;
 }
 .background-home {
-	background: url('ocean.png');
+	background: url('background/ocean.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	padding-top: 1%
 }
 .background-posts {
 	background: url('background/yoga-pose-home.png');
@@ -40,6 +43,7 @@ html, body {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	padding-top: 1%;
 	color: rgba(187, 220, 232, 1);
 }
 .btn:hover{
@@ -61,11 +65,6 @@ html, body {
   margin-right: 10%;
   margin-left: 10%;
 }
-.navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > a:hover, .navbar-default .navbar-nav > li.open > a:focus {
-    background-color: rgba(255, 255, 255, 1);
-    color: black;
-}
-
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -79,7 +78,7 @@ html, body {
   list-style: none;
   font-size: 14px;
   text-align: left;
-  background-color: rgba(187, 220, 232, 0.8);
+  background-color: rgba(187, 220, 232, 1);
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -87,10 +86,27 @@ html, body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
+.dropdown-menu > li:hover {
+	background-color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: black;
+}
+.form-label {
+	letter-spacing: 1.5px;
+	font-size: 2.5vh;
+}
+.navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > a:hover, .navbar-default .navbar-nav > li.open > a:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
 img.nav-logo {
 	height: inherit;
 	/*width: 100%;*/
 	/*display: none;*/
+}
+.nav-bg {
+	background-color: rgba(255, 255, 255, 1);
 }
 .navbar {
   position: relative;
@@ -116,15 +132,37 @@ img.nav-logo {
     color: rgba(151, 188, 224, 1);
     font-size: 2.2vh;
     margin-top: 20px;
+    letter-spacing: 1.5px;
 }
+.notice-msg {
+		font-size: 2.5vh;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 1.5px;
+    padding: 1% auto;
+    margin: 1% 20%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.notice-success {
+	  color: rgba(0, 219, 51, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 219, 51, 0.5);
+}
+.notice-error {
+	  color: rgba(255, 10, 10, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 10, 10, 0.5);
+}
+
 .table-hover > tbody > tr:hover {
     background-color: rgba(151, 188, 224, 1);
     color: white;
 }
-#header-inner {
-    width: 900px;
-    height: 100px;
-    margin: 0px auto;
+.table-hover > thead > tr > th {
+	font-size: 2.5vh;
+	letter-spacing: 1.5px;
+	color: white;
 }
 
 /********************************************************/

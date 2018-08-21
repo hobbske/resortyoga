@@ -1,31 +1,45 @@
 <div class="background-contacts">
-  <div class="row">
+  <div class="page-header text-center">
+    <%= image_tag('logo/ry-name-wh.png', class: 'page-header-logo') %>
+    <div>Send Us A Message</div>
+  </div>
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "notice-msg notice-#{key}", id: "alert_placeholder" %>
+  <% end %>
+  
+   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <div class="">
+      <h2 style="color:rgba(151, 188, 224, 1);">How Can We Help You?</h2>
+      <br>
 
-        <h2>Send Me A Message</h2>
-        <h4>How can I help?</h4>
-        <br>
+      <%= form_for @contact do |f| %>
 
-        <%= form_for @contact do |f| %>
+        <div class="form-group">
+          <%= f.label :name, class: 'form-label' %>
+          <%= f.text_field :name, class: "form-control"%>
+        </div>
+        <div class="form-group">
+          <%= f.label :email, class: 'form-label' %>
+          <%= f.text_field :email, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :comments, class: 'form-label' %>
+          <%= f.text_area :comments, class: "form-control" %>
+        </div>
 
-          <div class="form-group">
-            <%= f.label :name %>
-            <%= f.text_field :name, class: "form-control"%>
-          </div>
-          <div class="form-group">
-            <%= f.label :email %>
-            <%= f.text_field :email, class: "form-control" %>
-          </div>
-          <div class="form-group">
-            <%= f.label :comments %>
-            <%= f.text_area :comments, class: "form-control" %>
-          </div>
+        <%= f.submit "Submit", class: "btn btn-brand-btn", id: 'msg-submit' %>
 
-          <%= f.submit "Submit", class: "btn btn-brand-btn" %>
-
-        <% end %>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {        
+    
+    setTimeout(function() {
+      $(".notice-msg").fadeOut(3000);
+    }, 3000);
+    
+  });
+</script>
