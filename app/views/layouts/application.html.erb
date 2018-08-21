@@ -46,11 +46,16 @@
             <li class="links"><%= link_to "Blog", posts_path %></li>
             <li class="links"><%= link_to "Contact", new_contact_path %></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+              <a href="/products/all" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="https://vimeo.com/professionals?utm_medium=cpc&utm_source=GOOGLE&utm_content=US_Search_Brand_Alone_Alpha_EN*Vimeo+-+Exact&utm_term=vimeo&utm_campaign=2000&gclid=EAIaIQobChMI1tDj7Y_j3AIV1LrACh11xAZxEAAYASABEgIppPD_BwE&gclsrc=aw.ds&dclid=CLynmPGP49wCFUytTwodCsMMnw">Videos</a></li>
+                <li><%= link_to "Videos", products_video_path %>
+                  <!-- <a href="https://vimeo.com/professionals?utm_medium=cpc&utm_source=GOOGLE&utm_content=US_Search_Brand_Alone_Alpha_EN*Vimeo+-+Exact&utm_term=vimeo&utm_campaign=2000&gclid=EAIaIQobChMI1tDj7Y_j3AIV1LrACh11xAZxEAAYASABEgIppPD_BwE&gclsrc=aw.ds&dclid=CLynmPGP49wCFUytTwodCsMMnw">Videos</a> -->
+                </li>
+
                 <li role="separator" class="divider"></li>
-                <li><a href="http://www.bettipot.net/">Betti-Pot</a></li>
+                <li><%= link_to "Betti-Pot", products_betti_pot_path %>
+                  <!-- <a href="http://www.bettipot.net/">Betti-Pot</a> -->
+                </li>
               </ul>
             </li>
           </ul>
