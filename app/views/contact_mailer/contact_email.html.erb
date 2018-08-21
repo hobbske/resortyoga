@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Quicksand' %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	
+	</head>
+	<body style="background-color:rgba(187, 220, 232, 1);">
+		<div class="page-header text-center">
+			<%= image_tag('logo/ry-name-wh.png', class: 'page-header-logo') %>
+			<div>You Have Received A Message</div>
+			<div>From The <strong>General Contact Form</strong></div>
+		</div>
+		<div class="row">
+			<div class="form-group">
+	          <h3>Name</h3>
+	          <div class="form-control">
+	          	<%= "#{ @name }"%>
+	          </div>	
+	        </div>
+	        <div class="form-group">
+	          <h3>Email</h3>
+	          <div class="form-control">
+	          	<%= "#{ @email }"%>
+	          </div>	
+	        </div>
+	        <div class="form-group">
+	          <h3>Message</h3>
+	          <div class="form-control">
+	          	<%= "#{ @body }"%>
+	          </div>	
+	        </div>
+    	</div>
+	</body>
+</html>
+	
