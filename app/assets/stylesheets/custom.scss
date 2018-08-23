@@ -15,6 +15,11 @@ html, body {
 	/*background-color: rgba(187, 220, 232, 1);*/
 	background-color: rgba(255,255,255,1);
 }
+footer {
+  min-height: 50px;
+  margin-bottom: 0px;
+  color: rgba(  0, 115, 255, 1);
+}
 .background-about {
 	background: url('background/beach-background.jpg');
 	background-repeat: no-repeat;

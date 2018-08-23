@@ -1,107 +1,42 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-/********************************************************/
-/*DEFAULT STYLES*/
-/********************************************************/
-.background-home {
-	background: url('background/ocean.png');
+.background-about {
+	background: url('background/beach-background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
-	padding-top: 1%
+	height: 100%;
+	padding-top: 1%;
 }
-.header-logo {
-	width: 35%;
-	margin: auto;
-	padding: 2%;
-	background-color: rgba(255,255,255, .5);
+.about-container {
+	background-color: rgba(255,255,255, .4);
+	margin: 2% 10%;
+	height: 100%;
+	border: 1px solid transparent;
 	border-radius: 10px;
+	padding-top: 1%;
+	padding-bottom: 5%;
 }
+.about-container > h3 {
 
-.learn-more {
-	margin-top: 5%;
 }
-.logo-home {
-	height: 15vh;
+/* Add a frame effect for profile pic */
+.about-card {
+  background-color: transparent;
+  padding: 0% 3%;
+  margin: 0% auto;
+  width: 40%;
 }
-.page-header {
-	border-radius: 10px;
-	border-color: transparent;
-	font-size: 7vh;
-	color: white;
-	margin: 0% 10% 0% 10%;
-	padding: 0% 0% 0% 0%;
-}
-.page-header-dark {
-	background-color: rgba(255,255,255,0);
-	border-radius: 10px;
-	margin: 0% 10% 0% 10%;
-	padding: 0% 0% 0% 0%;
-}
-.page-header-dark h3 {
-	line-height: 1.66;
-	margin: 1% auto;
-	font-size: 2.45vh;
-	color: black;
-}
-.page-header-dark > h3.ry-quote {
-	font-size: 2.30vh;
-	font-style: oblique;
-	padding: 1% 7%;
-	color: rgba(120, 120, 120, 1);
-}
-.page-header-logo {
-	height: 10vh;
-	margin-top: 1%;
-}
-.quote-container {
-	background-color: rgba(255,255,255,0);
-	border-radius: 15px;
-	margin: 0% 15% 0% 15%;
-}
-.welcome-logo {
-	width: 35%;
-	margin: auto;
-	padding: 2%;
-	background-color: rgba(255,255,255, .5);
-	border-radius: 10px;
-}
-.welcome-quote {
-	font-size: 24px;
-	font-style: italic;
-	color: #fff;
-	margin: 2% 5% 2% 5%;
-	padding-top: 3%;
-}
-#isabella {
-  background: url('isabella.png') no-repeat bottom right;
-  width: 260px;
-  height: 233px;
-  float: right;
-  padding-top: 8px;
-}
-#quote {
-	font-size: 3.2vh;
-	font-style: oblique;
-	color: #fff;
-  float: left;
-  width: 70%;
-  padding-top: 5%;
-  text-align: left
-}
-#quotebar {
-	margin-top: 7%;
+.about-img {
   width: 100%;
-  background: url('background/quote-background.jpg') repeat-x;
+  margin: 0 auto;
+}	
+.about-body {
+	padding: 2% 3%;
+	font-size: 2vh;
+	text-align: left;
 }
-#quotebar-inner {
-  width: 80%;
-  height: 250px;
-  margin: 0px auto;
+.profile-hr {
+	border-top: 1px solid black;
+	margin-top: 0px;
 }
 
 
@@ -173,3 +108,5 @@
 
 
 }
+
+
