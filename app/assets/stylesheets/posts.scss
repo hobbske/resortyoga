@@ -2,37 +2,121 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-/********************************************************/
-/* Extra small devices (phones, 600px and down) */
-/********************************************************/
-@media only screen and (max-width: 600px) {
-
+* {
+    box-sizing: border-box;
 }
-/********************************************************/
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/********************************************************/
-@media only screen and (min-width: 600px) {
-	
-} 
-/********************************************************/
-/* Medium devices (landscape tablets, 768px and up) */
-/********************************************************/
-@media only screen and (min-width: 768px) {
 
-} 
-/********************************************************/
-/* Large devices (laptops/desktops, 992px and up) */
-/********************************************************/
-@media only screen and (min-width: 992px) {
-
-} 
-/********************************************************/
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/********************************************************/
-@media only screen and (min-width: 1200px) {
-
+.background-posts {
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	/*background: url('background/yoga-pose-home.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;*/
+	padding: 20px;	
 }
-/********************************************************/
-/*DEFAULT STYLES*/
-/********************************************************/
+/* Header/Blog Title */
+/*.header-blog {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+*/
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  /*background-color: #aaa;*/
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg-show {
+  /*background-color: #aaa;*/
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  width: 70%;
+  padding: 20px;
+}
+.post-body {
+	margin: 5% 2%;
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px;
+	border: 1px solid #aaa;
+	min-height: 20vh;
+	color: black;
+	padding: 2% 3%;
+	font-size: 2vh;
+	text-align: left;
+}
+.post-header {
+	background-color: rgba(255,255,255,.0);
+	border-radius: 10px;
+	border: 1px solid white;
+	font-size: 4vh;
+	color: white;
+	margin: 0%;
+	padding: 1% 0%;
+	height: 95vh;
+}
+.profileimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 0px auto;
+}
+.profile-p {
+	margin: 5% auto;
+}
+.blog-img {
+  width: 100%;
+}
+.pop-img {
+  width: 100%;
+  margin: 0 auto;
+}
+.profile-img {
+  width: 100%;
+  margin: 0 auto;
+}	
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
