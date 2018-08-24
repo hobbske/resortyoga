@@ -15,23 +15,22 @@
 	padding-top: 1%
 }
 .header-logo {
-	width: 35%;
+	width: 40%;
 	margin: auto;
 	padding: 2%;
 	background-color: rgba(255,255,255, .5);
 	border-radius: 10px;
 }
+.page-header-logo {
+	width: 50%;
+	margin-top: 1%;
+}
 
-.learn-more {
-	margin-top: 5%;
-}
-.logo-home {
-	height: 15vh;
-}
+
 .page-header {
 	border-radius: 10px;
 	border-color: transparent;
-	font-size: 7vh;
+	font-size: 3.5vh;
 	color: white;
 	margin: 0% 10% 0% 10%;
 	padding: 0% 0% 0% 0%;
@@ -54,10 +53,7 @@
 	padding: 1% 7%;
 	color: rgba(120, 120, 120, 1);
 }
-.page-header-logo {
-	height: 10vh;
-	margin-top: 1%;
-}
+
 .quote-container {
 	background-color: rgba(255,255,255,0);
 	border-radius: 15px;
@@ -69,6 +65,9 @@
 	padding: 2%;
 	background-color: rgba(255,255,255, .5);
 	border-radius: 10px;
+}
+.logo-home {
+	width: 80%;
 }
 .welcome-quote {
 	font-size: 24px;

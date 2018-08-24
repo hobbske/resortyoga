@@ -12,27 +12,30 @@
 	height: 100%;
 	border: 1px solid transparent;
 	border-radius: 10px;
-	padding-top: 1%;
+	padding-top: 3%;
 	padding-bottom: 5%;
 }
-.about-container > h3 {
-
+.about-body {
+	line-height: 1.66;
+	text-indent: 3%;
+	margin: 2% auto;
 }
 /* Add a frame effect for profile pic */
 .about-card {
   background-color: transparent;
   padding: 0% 3%;
   margin: 0% auto;
-  width: 40%;
+  width: 30%;
 }
 .about-img {
   width: 100%;
   margin: 0 auto;
 }	
-.about-body {
-	padding: 2% 3%;
-	font-size: 2vh;
-	text-align: left;
+.about-quote {
+	margin-left: 10%;
+	font-style: oblique;
+	color: rgba(120, 120, 120, 1);
+	line-height: 1.66;
 }
 .profile-hr {
 	border-top: 1px solid black;
