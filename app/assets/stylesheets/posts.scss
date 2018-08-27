@@ -2,19 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
+/** {
     box-sizing: border-box;
-}
+}*/
 
 .background-posts {
 	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-	padding: 20px;	
+	padding: 20px 0px;	
 }
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn { 
   float: left;
   width: 75%;
+  padding-left: 20px;
 }
 
 /* Right column */
@@ -22,6 +23,7 @@
   float: left;
   width: 25%;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Fake image */
