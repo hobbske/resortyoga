@@ -1,51 +1,54 @@
-
-  <div class="background-posts"> 
-    <div class="container">
-      <div class="page-header text-center">
-        <%= image_tag('logo/ry-name-db.png', class: 'page-header-logo') %>
-        <div>Yoga Vitamins Blog</div>
-      </div>
-
-      <div class="row">
-        <div class="leftcolumn">
-          <% @posts.each do |post| %>
-            <div class="card">
-              <h2><%= post.title %></h2>
-              <h5><%= post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %></h5>
-              <div class="fakeimg" ><%= image_tag('background/22.jpg', class: 'blog-img') %></div>
-              <p><%= post.body %></p>
-              <div>
-                <%= link_to 'Show', post, class: "btn btn-brand-btn" %>
-                <%= link_to 'Edit', edit_post_path(post), class: "btn btn-brand-btn" %>
-                <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-brand-btn" %>            
-              </div>
+<div class="background-posts"> 
+  
+    <div class="page-header text-center">
+      <div class="header-logo text-center">
+      <%= image_tag('logo/ry-name-db.png', class: 'page-header-logo') %>
+    </div>
+    <div class="text-center" style="font-weight:200;">
+      Yoga Vitamins Blog
+    </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="leftcolumn">
+        <% @posts.each do |post| %>
+          <div class="card">
+            <h2><%= post.title %></h2>
+            <h5><%= post.created_at.strftime("%A, %B %e, %Y @ %I:%M%p " ) %></h5>
+            <div class="fakeimg" ><%= image_tag('background/22.jpg', class: 'blog-img') %></div>
+            <p><%= post.body %></p>
+            <div>
+              <%= link_to 'Show', post, class: "btn btn-brand-btn" %>
+              <%= link_to 'Edit', edit_post_path(post), class: "btn btn-brand-btn" %>
+              <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-brand-btn" %>            
             </div>
-          <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="profileimg"><%= image_tag('isabella.png', class: 'profile-img') %></div>
+          <p class="profile-p">I am a professional, fitness trainer/educator and an E-RYT 500 Certified Yoga Alliance Instructor. I have been in the fitness/wellness industry for over 30 years.</p>
+          <div class="text-center"><%= link_to 'Learn More', isabella_path %></div>
         </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h2>About Me</h2>
-            <div class="profileimg"><%= image_tag('isabella.png', class: 'profile-img') %></div>
-            <p class="profile-p">I am a professional, fitness trainer/educator and an E-RYT 500 Certified Yoga Alliance Instructor. I have been in the fitness/wellness industry for over 30 years.</p>
-            <div class="text-center"><%= link_to 'Learn More', isabella_path %></div>
-          </div>
-          <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg"><%= image_tag('background/blog-02.jpg', class: 'pop-img') %></div><br>
-            <div class="fakeimg"><%= image_tag('background/blog-03.jpg', class: 'pop-img') %></div><br>
-            <div class="fakeimg"><%= image_tag('background/side-01.jpg', class: 'pop-img') %></div>
-          </div>
-          <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text..</p>
-          </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg"><%= image_tag('background/blog-02.jpg', class: 'pop-img') %></div><br>
+          <div class="fakeimg"><%= image_tag('background/blog-03.jpg', class: 'pop-img') %></div><br>
+          <div class="fakeimg"><%= image_tag('background/side-01.jpg', class: 'pop-img') %></div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
         </div>
       </div>
+    </div>
 
-      <div class="footer">
-        <h2>Footer</h2>
-        <%= link_to 'New Post', new_post_path, class: 'btn btn-brand' %>
-      </div>
-    
-    </div> 
-  </div>
+    <div class="footer">
+      <h2>Footer</h2>
+      <%= link_to 'New Post', new_post_path, class: 'btn btn-brand' %>
+    </div>
+  
+  </div> 
+</div>

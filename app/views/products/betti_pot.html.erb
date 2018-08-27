@@ -1,30 +1,73 @@
-<div class="background-product">
-	<div class="page-header">
-
-<div class="page-header text-center">
-    <%= image_tag('logo/ry-name-db.png', class: 'page-header-logo') %>
-    <div style="color">Betti Pot</div>
+<main class="product-container">
+ 
+  <!-- Left Column / Headphones Image -->
+  <div class="product-left-column">
+		<div class="product-card">
+	    <img data-image="black" class="product-img" src="http://www.bettipot.net/assets/images/gallery/ebonyblack.jpg" alt="">
+	    <img data-image="articice" class="product-img" src="http://www.bettipot.net/assets/images/gallery/arcticice.jpg" alt="">
+	    <img data-image="coral" class="product-img active" src="http://www.bettipot.net/assets/images/gallery/coral.jpg" alt="">
+	  </div>
   </div>
-	</div>	
 
-	<div class="about-container ">		
-		<div class="page-header-dark">
-			<%= image_tag('products/betti-pot.jpg', class: 'profile-img') %>			
-			<h3>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sunt enim, deserunt reprehenderit dignissimos vero asperiores a itaque, alias labore iure dolorem, praesentium! Excepturi dicta cumque, consequuntur non accusamus sequi.
-			</h3>
-			<h3>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, illum blanditiis molestiae voluptas quo, ut minima velit esse saepe officia illo quos voluptatum consequuntur temporibus maiores cumque corrupti eveniet, nam!
-			</h3>
-			<hr style="border-color:black;width:90%;">
-			<h3>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus molestias eum eaque dolorum molestiae maiores fuga rem, cum eligendi laudantium quo adipisci, doloremque reprehenderit ullam nostrum? Tenetur reprehenderit ipsum minus.
-			</h3>
-			<hr style="border-color:rgba(  0, 115, 255, 1);width:50%;">
-		</div>
-		<div class="learn-more text-center">
-			<%= link_to 'Place Order', products_all_path, class: 'btn btn-lg btn-primary' %>
-			<%= link_to 'Back to Products', products_all_path, class: 'btn btn-lg btn-brand-btn' %>
-		</div>
-	</div>
-</div>
+ 
+  <!-- Right Column -->
+  <div class="product-right-column">
+ 
+    <!-- Product Description -->
+    <div class="product-description">
+      <span>Health Products</span>
+      <h1>Betti Pot</h1>
+      <p>Betti Pot™ is the better neti because it is the premium neti made in the U.S.A. from sustainable, non-toxic materials such as high-fired porcelain and food-grade ceramic glaze. </p>
+    </div>
+ 
+    <!-- Product Configuration -->
+    <div class="product-configuration">
+ 
+      <!-- Product Color -->
+      <div class="product-color">
+        <span>Color</span>
+ 
+        <div class="color-choose">
+          <div>
+            <input data-image="coral" type="radio" id="coral" name="color" value="coral" checked>
+            <label for="coral"><span></span></label>
+          </div>
+          <div>
+            <input data-image="articice" type="radio" id="articice" name="color" value="articice">
+            <label for="articice"><span></span></label>
+          </div>
+          <div>
+            <input data-image="black" type="radio" id="black" name="color" value="black">
+            <label for="black"><span></span></label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+ 
+    <!-- Product Pricing -->
+    <div class="product-price">
+      <span>$49.99</span>
+      <a href="#" class="cart-btn">Buy Now</a>
+    </div>
+  </div>
+</main>
+<script>
+
+$(document).ready(function() {
+ 
+  $('.color-choose input').on('click', function() {
+      var headphonesColor = $(this).attr('data-image');
+ 
+      $('.active').removeClass('active');
+      $('.product-left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+
+      $(this).addClass('active');
+  });
+
+});
+
+</script> 
+
+
+

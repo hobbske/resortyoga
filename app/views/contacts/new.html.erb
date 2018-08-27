@@ -1,7 +1,11 @@
 <div class="background-contacts">
-  <div class="page-header text-center">
-    <%= image_tag('logo/ry-name-wh.png', class: 'page-header-logo') %>
-    <div>Send Us A Message</div>
+  <div class="page-header">
+    <div class="header-logo text-center">
+      <%= image_tag('logo/ry-name-wh.png', class: 'page-header-logo') %>
+    </div>
+    <div class="text-center">
+      Send Us A Message
+    </div>
   </div>
   <% flash.each do |key, value| %>
     <%= content_tag :div, value, class: "notice-msg notice-#{key}", id: "alert_placeholder" %>
