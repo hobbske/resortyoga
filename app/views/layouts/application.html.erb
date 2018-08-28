@@ -55,8 +55,12 @@
                 </li>
               </ul>
             </li>
-            <li style="color:white !important;"><%= link_to "Login", new_user_session_path, class: 'btn btn-sm btn-brand-btn'%></li>
-            <li><%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-sm btn-brand-btn' %></li>
+            <% if current_user %>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-sm btn-brand-btn'%></li>
+              <li><%= link_to "Login", new_user_session_path, class: 'btn btn-sm btn-brand-btn'%></li>
+            <% else %>
+              <li><%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-sm btn-brand-btn' %></li>
+            <% end %>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             
