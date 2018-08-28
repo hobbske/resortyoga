@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-	alert("products.js works!");
  
   $('.color-choose input').on('click', function() {
       var headphonesColor = $(this).attr('data-image');
