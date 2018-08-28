@@ -50,8 +50,16 @@
       <span>$49.99</span>
       <a href="#" class="cart-btn">Buy Now</a>
     </div>
+
   </div>
+
 </main>
+
+    <div class="inline-link-container"> 
+      <%= link_to "<< Back", :back, class: 'inline-link' %>  |  
+      <%= link_to "View Videos", products_video_path, class: 'inline-link' %>
+    </div>
+
 <script>
 
 $(document).ready(function() {

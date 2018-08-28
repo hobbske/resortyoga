@@ -1,11 +1,9 @@
 <div class="background-product">
-	<div class="page-header">
 
-<div class="page-header text-center">
-    <%= image_tag('logo/ry-name-db.png', class: 'page-header-logo') %>
+	<div class="page-header text-center">
+    <%= image_tag('logo/ry-name-wh.png', class: 'page-header-logo') %>
     <div>Video Products</div>
   </div>
-	</div>	
 
 	<div class="about-container ">		
 		<div class="page-header-dark">			
@@ -19,11 +17,12 @@
 			<h3>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus molestias eum eaque dolorum molestiae maiores fuga rem, cum eligendi laudantium quo adipisci, doloremque reprehenderit ullam nostrum? Tenetur reprehenderit ipsum minus.
 			</h3>
-			<hr style="border-color:rgba(  0, 115, 255, 1);width:50%;">
 		</div>
-		<div class="learn-more text-center">
-			<%= link_to 'Place Order', products_all_path, class: 'btn btn-lg btn-primary' %>
-			<%= link_to 'Back to Products', products_all_path, class: 'btn btn-lg btn-brand-btn' %>
+
+		<div class="inline-link-container">	
+			<%= link_to "<< Back", :back, class: 'inline-link' %>  |  
+			<%= link_to "View Betti-Pots", products_betti_pot_path, class: 'inline-link' %>
 		</div>
+
 	</div>
 </div>
