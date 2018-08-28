@@ -172,6 +172,12 @@ img.nav-logo {
     border-color: rgba(255, 10, 10, 0.5);
 }
 
+.row-custom {
+  margin: 0px;
+  display: flex;
+  padding: 20px auto;
+}
+
 .table-hover > tbody > tr:hover {
     background-color: rgba(151, 188, 224, 1);
     color: white;
