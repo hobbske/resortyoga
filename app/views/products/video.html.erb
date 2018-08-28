@@ -14,24 +14,24 @@
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, illum blanditiis molestiae voluptas quo, ut minima velit esse saepe officia illo quos voluptatum consequuntur temporibus maiores cumque corrupti eveniet, nam!
 			</h4>
 			<hr style="border-color:black;width:90%;">
-			<h4>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus molestias eum eaque dolorum molestiae maiores fuga rem, cum eligendi laudantium quo adipisci, doloremque reprehenderit ullam nostrum? Tenetur reprehenderit ipsum minus.
-			</h4>
 		</div>
 		<div class="row-custom">
 			<div class="col-md-4 plan-row">
 				<div class="text-center plan-container">
-					<%= link_to "Purchase Individual Videos", products_betti_pot_path, class: 'btn btn-lg btn-brand-btn' %>
+					<h4>Purchase single-user unlimited streaming access here.</h4>
+					<%= link_to "Purchase Individual Videos", new_user_registration_path, class: 'btn btn-lg btn-brand-btn' %>
 				</div>
 			</div>
 			<div class="col-md-4 plan-row">
 				<div class="text-center plan-container">
-					<%= link_to "Annual Membership", products_betti_pot_path, class: 'btn btn-lg btn-brand-btn' %>
+					<h4>Subscribe and get streaming access to all videos here.</h4>
+					<%= link_to "Annual Membership", new_user_registration_path, class: 'btn btn-lg btn-brand-btn' %>
 				</div>
 			</div>
 			<div class="col-md-4 plan-row">
 				<div class="text-center plan-container">
-					<%= link_to "Member Login", products_betti_pot_path, class: 'btn btn-lg btn-brand-btn' %>
+					<h4>If you are currently a member, click here to access your content.</h4>
+					<%= link_to "Member Login", new_user_session_path, class: 'btn btn-lg btn-brand-btn' %>
 				</div>
 			</div>
 		</div>

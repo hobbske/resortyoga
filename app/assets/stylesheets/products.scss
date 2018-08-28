@@ -224,8 +224,13 @@
   margin: 20px auto;
 }
 .plan-container {
+  color: var(--brand-color-dg);
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
   margin: 20px auto;
+  padding: 30px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,1);
 }
 /* Responsive */
 @media (max-width: 940px) {
