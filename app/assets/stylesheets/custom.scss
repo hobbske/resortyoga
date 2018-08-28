@@ -136,6 +136,21 @@ img.nav-logo {
     margin-top: 20px;
     letter-spacing: 1.5px;
 }
+.navbar-default .navbar-nav > li > a.btn-brand-btn {
+    color: var(--brand-color-db);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: var(--brand-color-db);
+    margin: 30px 10px 0px 10px;
+    padding: 5px;
+}
+.navbar-default .navbar-nav > li > a.btn-brand-btn:hover{
+    color: rgba(255,255,255,1);
+    background-color: var(--brand-color-db);
+    border-color: rgba(255,255,255,1);
+    margin: 30px 10px 0px 10px;
+    padding: 5px;
+}
+
 .notice-msg {
 		font-size: 18px;
 		font-weight: bold;
